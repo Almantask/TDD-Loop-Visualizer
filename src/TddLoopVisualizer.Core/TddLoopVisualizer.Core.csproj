@@ -5,4 +5,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo Success &gt; &quot;$(ProjectDir)build-output.txt&quot;" />
+  </Target>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="echo Fail &gt; &quot;$(ProjectDir)build-output.txt&quot;" />
+  </Target>
+
 </Project>
