@@ -4,6 +4,10 @@ As a TDD practioner
 I would like to be configure the target for TDD loop to scan
 So that I could choose freely the tests project path
 
+As a TDD practioner
+I would like the setting of a tests project to append target steps for producing build outcome
+So that I don't have to edit csproj file manually
+
 Scenario: Configure a target tests project for scans using existing project
 Given I input an existing tests project file as a target for scans
 When I click save
