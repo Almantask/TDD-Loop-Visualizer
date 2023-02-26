@@ -14,7 +14,8 @@ An extension for Visual Studio to visualize test run flow (red, green)
 
 ### 1. Setup build outcome
 
-The extension relies on pre/post build events.
+The extension relies on pre/post build events. Set it up for the test project you want.
+Highly recommended that you add to gitignore the build-output.txt file.
 
 Print in a "build-output.txt" "Fail" for pre event:
 
