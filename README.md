@@ -32,6 +32,18 @@ echo Success > "$(ProjectDir)build-output.txt"
 If build failed - it will remain with the word "Fail".
 If it succeeded - the word "Fail" will be overriden.
 
+This can also be done by simply adding these 2 lines:
+
+```xml
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo Success &gt; &quot;$(ProjectDir)build-output.txt&quot;" />
+  </Target>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="echo Fail &gt; &quot;$(ProjectDir)build-output.txt&quot;" />
+  </Target>
+```
+
 ### 2. Setup code coverage
 
 If you use the default template, for example for xUnit, it should be fine as-is as it comes with codecov setup.
