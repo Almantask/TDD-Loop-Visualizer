@@ -47,3 +47,13 @@ This can also be done by simply adding these 2 lines:
 ### 2. Setup code coverage
 
 If you use the default template, for example for xUnit, it should be fine as-is as it comes with codecov setup.
+
+## Running tests (appium)
+
+Follow instructions [here](https://www.headspin.io/blog/testing-windows-desktop-apps-with-appium).
+
+## Tips
+
+To add new tests, you will need https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/
+
+This provides a tool `inspect.exe` which can be used to inspect desktop apps just like html.
