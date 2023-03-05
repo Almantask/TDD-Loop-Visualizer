@@ -1,5 +1,5 @@
 Feature: Close
 
 Scenario: Close
-When I click the close button
+When I close TddLoopVisualizer
 Then it should be closed

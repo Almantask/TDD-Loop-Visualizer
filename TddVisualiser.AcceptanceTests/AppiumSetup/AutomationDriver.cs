@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Appium;
+using System.Diagnostics;
 
 namespace TddVisualiser.AcceptanceTests.WinDriver
 {

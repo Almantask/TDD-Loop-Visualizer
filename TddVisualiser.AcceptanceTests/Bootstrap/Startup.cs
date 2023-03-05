@@ -8,19 +8,19 @@ namespace TddVisualiser.AcceptanceTests.Bootstrap
     {
         public static WindowsDriver<WindowsElement> Driver { get; set; }
 
-        [BeforeTestRun]
-        public static void InitializeDriver()
+        [BeforeTestRun()]
+        public static void InitializeAppium()
         {
             AutomationServer.Start();
-            Driver = AutomationDriver.BuildDriverForApp("TODO");
+            // Driver = AutomationDriver.BuildDriverForApp(@"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.exe");
         }
 
         [AfterTestRun]
-        public static void CleanupDriver()
+        public static void CleanupAppium()
         {
             // TODO: Anything else?
             AutomationServer.Stop();
-            Driver.Quit();
+            //Driver.Quit();
         }
     }
 }
